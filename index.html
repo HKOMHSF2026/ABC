@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>اختبار حماية PHP</title>
+</head>
+<body>
+
+<h2>اختبار الاتصال بالـ PHP</h2>
+<button onclick="test()">جرب</button>
+<pre id="out"></pre>
+
+<script>
+function test() {
+  fetch('https://hkomhsf.freehostos.com/test.php', {
+    credentials: 'include'
+  })
+  .then(r => r.text())
+  .then(t => out.textContent = t)
+  .catch(e => out.textContent = 'خطأ');
+}
+</script>
+
+</body>
+</html>
