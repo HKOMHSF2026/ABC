@@ -1,0 +1,15 @@
+{
+  "name": "telegram-minecraft-bot",
+  "version": "1.0.0",
+  "description": "بوت Telegram لتشغيل بوتات ماين كرافت باستخدام Node.js و Bedrock Protocol",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "author": "HKOMHSF2026",
+  "license": "MIT",
+  "dependencies": {
+    "bedrock-protocol": "^3.7.0",
+    "telegraf": "^4.15.1"
+  }
+}
